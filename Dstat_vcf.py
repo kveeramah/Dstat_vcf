@@ -179,9 +179,11 @@ fileout.write(out)
 fileout.close()
 
 def f4_mult(x,ind_geno,batch,nb_blocks,blck_array,output):
-
+    
+    samp1,samp2,samp3,samp4=batch[x]
+    
     try:
-        samp1,samp2,samp3,samp4=batch[x]
+        
 
         nb_snp=len(ind_geno[samp1])
 
